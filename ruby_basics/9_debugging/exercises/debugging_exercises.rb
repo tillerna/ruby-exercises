@@ -36,9 +36,7 @@ end
 # Use p and puts in order to find what's wrong with our method
 
 def isogram?(string)
-  string_array = string.downcase.split
-  unique = string_array.uniq
-  return string_array[0] == unique[0]
+  string.length == (string.downcase.split('')).uniq.length
 end
 
 # Can you guess what's next?
